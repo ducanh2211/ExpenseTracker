@@ -14,4 +14,5 @@ extension Image {
     static let ic_tab_addTransaction = Image("ic_tab_plus")
     static let ic_tab_piechart = Image("ic_tab_piechart")
     static let ic_tab_user = Image("ic_tab_user")
+    static let ic_arrow_down = Image("ic_arrow_down")
 }

@@ -31,6 +31,9 @@
 		84B5D24D2B9828B0006D1978 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84B5D2442B9828B0006D1978 /* Inter-Regular.ttf */; };
 		84B5D24E2B9828B0006D1978 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84B5D2452B9828B0006D1978 /* Inter-Black.ttf */; };
 		84B5D24F2B9828B0006D1978 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84B5D2462B9828B0006D1978 /* Inter-Thin.ttf */; };
+		84B5D2582B99688C006D1978 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5D2572B99688C006D1978 /* DateExt.swift */; };
+		84B5D25A2B997FB2006D1978 /* ButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5D2592B997FB2006D1978 /* ButtonExt.swift */; };
+		84B5D25C2B99BE0E006D1978 /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5D25B2B99BE0E006D1978 /* CategorySelectionView.swift */; };
 		84CA1A6D2B888C630048304A /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA1A6C2B888C630048304A /* ExpenseTrackerApp.swift */; };
 		84CA1A6F2B888C630048304A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA1A6E2B888C630048304A /* ContentView.swift */; };
 		84CA1A712B888C650048304A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA1A702B888C650048304A /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		84B5D2452B9828B0006D1978 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
 		84B5D2462B9828B0006D1978 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		84B5D2502B982937006D1978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84B5D2572B99688C006D1978 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		84B5D2592B997FB2006D1978 /* ButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExt.swift; sourceTree = "<group>"; };
+		84B5D25B2B99BE0E006D1978 /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
 		84CA1A692B888C630048304A /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA1A6C2B888C630048304A /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		84CA1A6E2B888C630048304A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 				84B5D2332B9820E1006D1978 /* AddTransactionView.swift */,
 				84B5D22F2B981FD3006D1978 /* BudgetView.swift */,
 				84B5D2312B981FD8006D1978 /* ProfileView.swift */,
+				84B5D25B2B99BE0E006D1978 /* CategorySelectionView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 				84B5D2362B982394006D1978 /* ImageExt.swift */,
 				84B5D2382B9823AC006D1978 /* ColorExt.swift */,
 				84B5D23A2B98254A006D1978 /* FontExt.swift */,
+				84B5D2572B99688C006D1978 /* DateExt.swift */,
+				84B5D2592B997FB2006D1978 /* ButtonExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -373,10 +382,13 @@
 				84B5D22E2B981FAF006D1978 /* TransactionView.swift in Sources */,
 				84B5D22C2B981FA6006D1978 /* HomeView.swift in Sources */,
 				84B5D21D2B95838A006D1978 /* Category.swift in Sources */,
+				84B5D2582B99688C006D1978 /* DateExt.swift in Sources */,
+				84B5D25C2B99BE0E006D1978 /* CategorySelectionView.swift in Sources */,
 				84B5D2342B9820E1006D1978 /* AddTransactionView.swift in Sources */,
 				84B5D21F2B95839D006D1978 /* Budget.swift in Sources */,
 				84CA1A812B888D200048304A /* Constant.swift in Sources */,
 				84B5D21B2B957155006D1978 /* Transaction.swift in Sources */,
+				84B5D25A2B997FB2006D1978 /* ButtonExt.swift in Sources */,
 				84B5D23B2B98254A006D1978 /* FontExt.swift in Sources */,
 				84B5D2372B982394006D1978 /* ImageExt.swift in Sources */,
 				84B5D2322B981FD8006D1978 /* ProfileView.swift in Sources */,

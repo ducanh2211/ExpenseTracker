@@ -36,6 +36,7 @@ extension AppDatabase {
         try db.create(table: Category.databaseTableName, options: .ifNotExists) { t in
             t.autoIncrementedPrimaryKey(Category.Columns.id.rawValue)
             t.column(Category.Columns.name.rawValue, .text).notNull()
+            t.column(Category.Columns.transactionKind.rawValue, .text).notNull()
         }
     }
     

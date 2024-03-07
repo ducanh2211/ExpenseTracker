@@ -11,6 +11,7 @@ import GRDB
 struct Category {
     var id: Int64?
     var name: Category.Name
+    var transactionKind: Transaction.Kind
     
     // reference
     static let transactions = hasMany(Transaction.self)
@@ -29,6 +30,7 @@ extension Category: Codable, FetchableRecord, MutablePersistableRecord {
     enum Columns: String, ColumnExpression {
         case id
         case name
+        case transactionKind
     }
     
     mutating func didInsert(_ inserted: InsertionSuccess) {
@@ -37,7 +39,8 @@ extension Category: Codable, FetchableRecord, MutablePersistableRecord {
 }
 
 extension Category {
-    enum Name: String, Codable, DatabaseValueConvertible {
+    enum Name: String, Codable, CaseIterable, DatabaseValueConvertible {
+        // expense
         case foodAndDining
         case utilities
         case transport
@@ -48,5 +51,10 @@ extension Category {
         case housing
         case personal
         case pets
+        
+        // income
+        case salary
+        case interest
+        case other
     }
 }

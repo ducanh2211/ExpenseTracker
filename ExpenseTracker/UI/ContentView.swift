@@ -71,6 +71,7 @@ struct ContentView: View {
             }
             .background(Color.light80)
         }
+        .ignoresSafeArea(.keyboard)
     }
     
     func customTabbarView() -> some View {
